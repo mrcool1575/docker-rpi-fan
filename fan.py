@@ -77,8 +77,8 @@ def handleFan():
         sum = 100
     if sum < -100:
         sum = -100
-    # print("actualTemp %4.2f TempDiff %4.2f pDiff %4.2f iDiff %4.2f fanSpeed %5d" % (
-    #     actualTemp, diff, pDiff, iDiff, fanSpeed))
+    print("actualTemp %4.2f TempDiff %4.2f pDiff %4.2f iDiff %4.2f fanSpeed %5d" % (
+        actualTemp, diff, pDiff, iDiff, fanSpeed))
     myPWM.ChangeDutyCycle(fanSpeed)
     return()
 
